@@ -26,7 +26,7 @@ include('./../app/core/config.php');
             left: 10px;
             font-size: 1.5rem;
             color: white;
-            background-color: #28a745;
+               background-color: #28a745;
             border-radius: 50%;
             padding: 8px;
         }
