@@ -31,6 +31,7 @@ $usuario_cargo = $usuario['cargo_id'] ?? 0;
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <title>Perfil do Usuário</title>
     <style>
         .profile-header {
@@ -68,7 +69,7 @@ $usuario_cargo = $usuario['cargo_id'] ?? 0;
     <div class="container-fluid py-5">
         <!-- Perfil do Usuário -->
         <div class="profile-header d-flex flex-column flex-md-row align-items-center gap-4 p-4 bg-light rounded shadow-sm">
-            <img src="https://placehold.co/120" alt="Avatar do Usuário" class="profile-avatar rounded-circle border border-secondary mb-3 mb-md-0">
+            <img src="public/assets/img/ProjifUsuario.png" alt="Avatar do Usuário" class="profile-avatar rounded-circle border border-secondary mb-3 mb-md-0">
             <div>
                 <h1 class="fw-bold text-dark mb-1"><?= htmlspecialchars($usuario_nome) ?></h1>
                 <p class="text-muted mb-1"><?= htmlspecialchars($usuario_email) ?></p>

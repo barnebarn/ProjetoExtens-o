@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Gerenciar Usuários</title>
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <style>
         .container {
             max-width: 1200px;

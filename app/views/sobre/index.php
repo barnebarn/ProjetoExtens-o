@@ -11,6 +11,7 @@ include('./../app/core/config.php');
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Sobre Nós - <?= APP_NOME ?></title>
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <style>
         .team-photo {
             width: 100%;

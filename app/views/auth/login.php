@@ -6,6 +6,7 @@ include('./../app/core/config.php');
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <title>Login</title>
     <style>
         .login-container {

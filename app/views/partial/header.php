@@ -12,7 +12,6 @@ if($usuarioLogado){
 }
 $usuario_cargo = $usuario['cargo_id'] ?? 0;
 ?>
-
 <header class="bg-dark text-white shadow-sm">
     <div class="container d-flex justify-content-between align-items-center py-3">
         <h1 class="mb-0">

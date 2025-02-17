@@ -5,6 +5,7 @@
     <title>Editando <?= $projeto['title'] ?></title>
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <script>
         $(document).ready(function() {
             // Função para alterar o status do participante via AJAX

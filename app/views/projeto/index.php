@@ -8,6 +8,7 @@ include('./../app/core/config.php');
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <style>
         /* Estilo geral */
         body {
@@ -143,7 +144,7 @@ include('./../app/core/config.php');
 
                 <?php foreach ($destaque_projects as $projeto): ?>
                     <div class="col-12 col-md-4 col-lg-2">
-                        <div class="card border-dark project-card shadow-sm">
+                        <div class="card project-card shadow-sm">
                             <a href="<?= URL ?>projeto/<?= $projeto['id'] ?>" class="text-decoration-none">
                                 <img src="<?= !empty($projeto['banner']) ? URL . 'public/' . $projeto['banner'] : 'https://placehold.co/100x100' ?>" class="card-img-top" alt="Imagem do Projeto">
                                 <div class="card-body p-3">

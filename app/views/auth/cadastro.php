@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <style>
         .signup-container {
             min-height: 80vh;

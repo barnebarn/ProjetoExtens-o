@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Criar Projeto</title>
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
 </head>
 <body>
     <?php include './../app/views/partial/header.php'; ?>

@@ -7,6 +7,7 @@ include('./../app/core/config.php');
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="public/assets/img/projifMin.png">
     <title>Home - <?= APP_NOME ?></title>
     <style>
         /* Custom styles */
