@@ -1,0 +1,17 @@
+{
+    "name": "ProjetoExtensão/projetos",
+    "description": "Um site de projetos utilizando MVC em PHP",
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "app/core/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
+    }
+}
