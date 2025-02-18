@@ -3,4 +3,5 @@
     <small>
         <div>&COPY; 2024 - <?= date('Y') ?> IFRO - <?= APP_NOME ?> / Informática - Programação Web</div>
     </small>
+    
 </footer>

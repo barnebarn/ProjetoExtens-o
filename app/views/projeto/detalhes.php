@@ -19,7 +19,7 @@ $statusExibido = $statusMap[$projeto['status']] ?? 'Desconhecido';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Projeto - <?= htmlspecialchars($projeto['title']) ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" href="public/assets/img/projifMin.png">
+    <link rel="icon" href="<?= URL ?>public/assets/img/projifMin.png">
     <style>
         body {
             background-color: #f4f7fc;
@@ -146,7 +146,7 @@ $statusExibido = $statusMap[$projeto['status']] ?? 'Desconhecido';
 <body>
 
     <?php include './../app/views/partial/header.php'; ?>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
     <div class="container py-5">
 
         <div class="project-header">
@@ -185,6 +185,7 @@ $statusExibido = $statusMap[$projeto['status']] ?? 'Desconhecido';
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text"><?= htmlspecialchars($relatorio['conteudo']) ?></p>
+                                    <p class="text-primary"><?= htmlspecialchars($relatorio['data_criacao']) ?></p>
                                 </div>
                             </div>
                         </div>
@@ -208,6 +209,7 @@ $statusExibido = $statusMap[$projeto['status']] ?? 'Desconhecido';
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text"><?= htmlspecialchars($atividade['conteudo']) ?></p>
+                                    <p class="text-primary"><?= htmlspecialchars($atividade['data_criacao']) ?></p>
                                 </div>
                             </div>
                         </div>

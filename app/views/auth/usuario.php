@@ -65,7 +65,7 @@ $usuario_cargo = $usuario['cargo_id'] ?? 0;
 <body>
 
     <?php include './../app/views/partial/header.php'; ?>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
     <div class="container-fluid py-5">
         <!-- Perfil do Usuário -->
         <div class="profile-header d-flex flex-column flex-md-row align-items-center gap-4 p-4 bg-light rounded shadow-sm">

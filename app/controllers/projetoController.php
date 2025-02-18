@@ -62,8 +62,8 @@ class ProjetoController extends Controller
             'projeto' => $projeto,
             'usuarioP' => $usuarioP,
             'usuarioParticipa' => $usuarioParticipa,
-                    'relatorios' => $relatorios,
-        'atividades' => $atividades
+            'relatorios' => $relatorios,
+            'atividades' => $atividades
         ]);
     }
 
@@ -275,13 +275,29 @@ public function removerParticipante($projeto_id, $usuario_id)
     exit;
 }
     // Método para alterar o status do participante
-public function alterar_status($projeto_id, $participante_id)
+public function alterar_status()
 {
-    $status = $_POST['status'];
-    
-    // Atualiza o status do participante no banco de dados
-    Projeto::alterarStatusParticipante($projeto_id, $participante_id, $status);
+    if (isset($_POST['status']) && isset($_POST['id'])) {
+        $statusData = $_POST['status'];
+        $projetoId = $_POST['id']; // Obtém o ID do projeto
+
+        // Itera sobre os participantes e atualiza o status de cada um
+        foreach ($statusData as $participanteId => $status) {
+            // Passa o projetoId e o participanteId para a função de alteração
+            Projeto::alterarStatusParticipante($projetoId, $participanteId, $status);
+        }
+
+        // Redireciona de volta para a página de edição do projeto
+        header('Location: ' . URL . 'projeto/editar/' . $projetoId); // A URL correta inclui o ID do projeto
+        exit;
+    } else {
+        // Se não encontrar o parâmetro 'status' ou 'id', retorna erro
+        echo "Nenhuma alteração de status ou projeto não encontrado!";
+    }
 }
+
+
+
 
     public function adicionarRelatorio($id)
     {

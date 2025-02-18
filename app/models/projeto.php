@@ -186,7 +186,16 @@ public static function buscarAtividades($projetoId)
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);  // Retorna todas as atividades
 }
-
+public static function alterarStatusParticipante($projetoId, $participanteId, $status)
+{
+    $pdo = Conexao::getConexao();
+    $sql = "UPDATE projeto_participantes SET status = :status WHERE projeto_id = :projetoId AND usuario_id = :participanteId";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':status', $status);
+    $stmt->bindParam(':projetoId', $projetoId);
+    $stmt->bindParam(':participanteId', $participanteId);
+    $stmt->execute();
+}
 
 
 

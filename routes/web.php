@@ -12,8 +12,8 @@ Router::post('/projeto/salvar', 'ProjetoController@salvar');
 Router::get('/projeto/editar/{id}', 'ProjetoController@editar');
 Router::post('/projeto/apagar/{id}', 'ProjetoController@apagar');
 Router::post('/projeto/participar/{id}', 'ProjetoController@participar');
-Router::post('/projeto/alterar_status/{id}/{usuario_id}', 'ProjetoController@alterar_status');
 Router::post('/projeto/adicionar_relatorio/{id}', 'ProjetoController@adicionarRelatorio');
+Router::post('/projeto/alterar_status', 'ProjetoController@alterar_status');
 
 
 // Página de projeto específico (modelo)

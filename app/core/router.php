@@ -8,13 +8,13 @@ class Router
 
     public static function get($route, $controller)
     {
-        $route = preg_replace('/{(\w+)}/', '(?P<\1>\d+)', trim($route, '/'));
+        $route = preg_replace('/{(\w+)}/', '(?P<\1>[^/]+)', trim($route, '/'));
         self::$routes['GET'][$route] = $controller;
     }
 
     public static function post($route, $controller)
     {
-        $route = preg_replace('/{(\w+)}/', '(?P<\1>\d+)', trim($route, '/'));
+        $route = preg_replace('/{(\w+)}/', '(?P<\1>[^/]+)', trim($route, '/'));
         self::$routes['POST'][$route] = $controller;
     }
 

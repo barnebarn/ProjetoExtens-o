@@ -26,7 +26,7 @@ include('./../app/core/config.php');
             left: 10px;
             font-size: 1.5rem;
             color: white;
-               background-color: #28a745;
+            background-color: #28a745;
             border-radius: 50%;
             padding: 8px;
         }
@@ -86,7 +86,7 @@ include('./../app/core/config.php');
 </head>
 
 <body>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
     <?php include './../app/views/partial/header.php'; ?>
 
     <div class="container my-5">

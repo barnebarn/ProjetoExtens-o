@@ -46,7 +46,7 @@ include('./../app/core/config.php');
 <body>
 
     <?php include './../app/views/partial/header.php'; ?>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
     <?php if (!empty($erro)): ?>
         <div class="error-message"><?= $erro ?></div>
     <?php endif; ?>

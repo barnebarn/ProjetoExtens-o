@@ -8,6 +8,8 @@
 </head>
 <body>
     <?php include './../app/views/partial/header.php'; ?>
+    <?php include './../app/views/partial/vlibras.php'; ?>
+
 
     <div class="container my-5 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
         <div class="col-md-8 col-lg-6">

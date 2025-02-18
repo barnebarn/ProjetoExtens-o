@@ -67,7 +67,7 @@ include('./../app/core/config.php');
     <?php 
     include './../app/views/partial/header.php';
     ?>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
     <!-- Hero Section -->
     <div class="container-fluid p-0">
         <img src="public/assets/img/home.png" class="img-fluid hero-image w-100" alt="Imagem principal">
@@ -110,6 +110,7 @@ include('./../app/core/config.php');
     </div>
 
     <?php include './../app/views/partial/footer.php'; ?>
+    
 
     <script src="<?= URL ?>/bootstrap/js/bootstrap.bundle.min.js"></script>
 

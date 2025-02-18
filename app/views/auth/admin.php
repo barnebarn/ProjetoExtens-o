@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Gerenciar Usuários</title>
     <link rel="stylesheet" href="<?= URL ?>/bootstrap/css/bootstrap.min.css">
-    <link rel="icon" href="public/assets/img/projifMin.png">
+    <link rel="icon" href="<?= URL ?>public/assets/img/projifMin.png">
     <style>
         .container {
             max-width: 1200px;
@@ -43,7 +43,7 @@
 <body>
 
 <?php include './../app/views/partial/header.php'; ?>
-
+    <?php include './../app/views/partial/vlibras.php'; ?>
 <div class="container mt-4">
     <h2 class="mb-4 text-center">Gerenciar Usuários</h2>
 

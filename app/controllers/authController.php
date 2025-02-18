@@ -24,10 +24,8 @@ class AuthController extends Controller {
         View::render('auth/login', ['erro' => 'Usuário não encontrado']);
         return;
     }
-    echo password_hash($senhaP, PASSWORD_BCRYPT);;
-    echo "<pre>";
-    print_r($usuario);
-    echo "</pre>";
+
+    echo "<script>alert('Email ou Senha esta incorreta!);</script>";
 
     if (password_verify($senhaP, $usuario['senha'])) {
         $_SESSION['usuario_id'] = $usuario['id'];
