@@ -113,7 +113,7 @@ include('./../app/core/config.php');
 <body class="d-flex flex-column min-vh-100">
     <?php include './../app/views/partial/vlibras.php'; ?>
     <?php include './../app/views/partial/header.php'; ?>
-
+    
     <div class="container py-5 flex-grow-1">
         <h1 class="mb-4 text-center text-dark">Projetos</h1>
 

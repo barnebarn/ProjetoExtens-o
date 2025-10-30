@@ -12,7 +12,7 @@ class Auth {
     public static function logout() {
         session_start();
         session_destroy();
-        header("Location: /ProjetoExtensão/login");
+        header("Location: /ProjetoExtens-o/login");
         exit;
     }
 

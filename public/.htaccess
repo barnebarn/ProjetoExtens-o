@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /ProjetoExtensão/public/
+    RewriteBase /ProjetoExtens-o/public/
 
     # Redireciona todas as requisições para index.php
     RewriteCond %{REQUEST_FILENAME} !-f

@@ -9,7 +9,7 @@ if (!defined('APP_NOME')) {
 }
 
 if (!defined('URL')) {
-    define('URL', 'http://localhost/ProjetoExtensão/');
+    define('URL', 'http://localhost/ProjetoExtens-o/');
 }
 if (!defined('DB_HOST')) define('DB_HOST', '127.0.0.1');
 if (!defined('DB_NAME')) define('DB_NAME', 'projif');
